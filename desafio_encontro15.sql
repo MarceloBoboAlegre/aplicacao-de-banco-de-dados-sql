@@ -195,6 +195,7 @@ ORDER BY v.data_venda ASC;
 -- 3
 SELECT 
     p.nome AS Nome_Produto,
+    p.preco as Preco_Unitario,
     SUM(v.quantidade) AS Total_vendido,
     f.nome AS Nome_Fornecedor
 FROM PRODUTOS_EX p
